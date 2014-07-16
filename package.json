@@ -1,0 +1,31 @@
+{
+  "name": "TimerApp",
+  "version": "0.0.0",
+  "description": "A cross-platform timer/count down app that can accept commands via web sockets. ",
+  "main": " ",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-atom-shell-app-builder": "~0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashleydavis/TimerApp"
+  },
+  "keywords": [
+    "timer",
+    "countdown",
+    "pomodoro",
+    "productivity",
+    "todo"
+  ],
+  "author": "Ashley Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashleydavis/TimerApp/issues"
+  },
+  "homepage": "https://github.com/ashleydavis/TimerApp"
+}

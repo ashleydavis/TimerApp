@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="bower_components/flipclock/compiled/flipclock.css">
+
+		<script type="text/javascript">
+		  window.$ = window.jQuery = require('bower_components/jquery/dist/jquery.js');
+		</script>
+
+		<!-- 
+		Doesn't work with atom. Have to load with require.
+		https://github.com/atom/atom-shell/issues/254
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		-->
+		<script src="bower_components/flipclock/compiled/flipclock.js"></script>
+	</head>
+	<body>
+	<div class="clock" style="margin:2em;"></div>
+	<div class="message"></div>
+
+	<script type="text/javascript">
+		var clock;
+
+		$(document).ready(function() {
+
+			var clock;
+
+			clock = $('.clock').FlipClock(10, {
+		        clockFace: 'MinuteCounter',
+		        countdown: true,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('The clock has stopped!')
+		        	}
+		        }
+		    });
+
+		});
+	</script>
+	
+	</body>
+</html>
